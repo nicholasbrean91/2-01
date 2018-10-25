@@ -1,14 +1,8 @@
 import java.util.ArrayList;
-
 public class Stack {
-	public void stackView(int stackNum){
-		
-		ArrayList<Integer> arl = new ArrayList<Integer>();
-		arl.add(stackNum);
+	private final ArrayList<Integer> list = new ArrayList<Integer>();
 	
-		for (int i = arl.size(); i > 0; i--) {
-			System.out.println(arl.get(i));
-		}
-	}
-
+	public void push(int num) {
+		list.add(num);
+	}		
 }
